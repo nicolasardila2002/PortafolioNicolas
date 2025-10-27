@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='42' fill='none' stroke='%2300f3ff' stroke-width='8'/><circle cx='50' cy='50' r='25' fill='none' stroke='%2300ffff' stroke-width='4'/><circle cx='50' cy='50' r='10' fill='%2300ffff'/></svg>">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Nicolas Ardila Rosas</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fuente futurista -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome para icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Fondo futurista -->
+    <div class="grid-background"></div>
+    
+    <!-- Header/Navegación -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <span class="logo-text">PORTAFOLIO</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">SOBRE MÍ</a></li>
+                <li><a href="#projects" class="nav-link">PROYECTOS</a></li>
+                <li><a href="#experience" class="nav-link">EXPERIENCIA</a></li>
+                <li><a href="#skills" class="nav-link">HABILIDADES</a></li>
+                <li><a href="#contact" class="nav-link">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Hero / Sobre Mí -->
+    <!-- Sección Hero / Sobre Mí ACTUALIZADA -->
+<section id="about" class="section hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Hola, soy</span>
+                    <span class="title-name">Nicolas Ardila Rosas</span>
+                </h1>
+                <p class="hero-subtitle">FULL STACK DEVELOPER & TECNÓLOGO ELECTROMECÁNICO</p>
+                <p class="hero-description">
+                    Programador especializado en desarrollo web full stack, con formación en tecnología electromecánica.
+                    Combino habilidades de software con conocimiento de sistemas físicos para crear soluciones innovadoras
+                    en la intersección entre el mundo digital y físico.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="openVideoModal()">VIDEO PRESENTACIÓN</button>
+                    <a href="CVnicolasardila.pdf" download class="btn-secondary">DESCARGAR CV</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="photo-container">
+                    <img src="fotoperfil.JPEG" alt="Nicolas Ardila Rosas - Full Stack Developer" class="profile-photo">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal para Video de Presentación -->
+<div id="videoModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeVideoModal()">&times;</span>
+        <h3> Video Presentación</h3>
+        <div class="video-container">
+            <iframe 
+                width="100%" 
+                height="400" 
+                <!-- src="https://www.youtube.com/embed/TU_VIDEO_ID"  -->
+                title="Video Presentación - Nicolas Ardila Rosas" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div class="modal-actions">
+            <a href="https://youtube.com/watch?v=TU_VIDEO_ID" class="btn-primary" target="_blank">Ver en YouTube</a>
+            <button class="btn-secondary" onclick="closeVideoModal()">Cerrar</button>
+        </div>
+    </div>
+</div>
+
+    <!-- Sección Proyectos -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">PROYECTOS</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="vet.png" alt="Sistema de gestion" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sistema de Gestión de una Veterinaria</h3>
+                        <p class="project-description">
+                            Aplicación hecha en Java para la gestion de clientes e inventarios de una veterinaria., usando MySQL.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Código</a>
+                            <a href="#" class="project-link">Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="bancoacme.png" alt="Proyecto Banco ACME" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">BANCO ACME</h3>
+                        <p class="project-description">
+                            Creacion de banco con alcemanamiento de datos en API.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Código</a>
+                            <a href="#" class="project-link">Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Experiencia -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section-title">EXPERIENCIA</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Desarrollador Full Stack</h3>
+                        <p class="timeline-company">Campuslands</p>
+                        <p class="timeline-description">
+                            Desarrollo de aplicaciones web utilizando Java, Spring Boot, MySQL y tecnologías frontend.
+                            Implementación de APIs RESTful y desarrollo de interfaces de usuario responsivas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2023-2024</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Ingeniero Electromecánico</h3>
+                        <p class="timeline-company">Colbeef</p>
+                        <p class="timeline-description">
+                            Diseño y mantenimiento de sistemas electromecánicos, automatización de procesos 
+                            y desarrollo de soluciones técnicas integrando software y hardware.
+                        </p>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Educación -->
+<section id="education" class="section education">
+    <div class="container">
+        <h2 class="section-title">EDUCACIÓN</h2>
+        <div class="education-timeline">
+            
+            <!-- Campuslands -->
+            <div class="education-item">
+                <div class="education-date">2025</div>
+                <div class="education-content">
+                    <h3 class="education-title">Full Stack Developer Junior</h3>
+                    <p class="education-institution">Campuslands</p>
+                    <p class="education-description">
+                        Programa intensivo de desarrollo web full stack. Especialización en 
+                        Java, Spring Boot, JavaScript, HTML5, CSS3, MySQL, Git y metodologías ágiles. 
+                        Formación práctica en desarrollo de aplicaciones web modernas.
+                    </p>
+                    <div class="education-tags">
+                        <span class="education-tag">Java</span>
+                        <span class="education-tag">Spring Boot</span>
+                        <span class="education-tag">JavaScript</span>
+                        <span class="education-tag">HTML</span>
+                        <span class="education-tag">CSS</span>
+                        <span class="education-tag">MySQL</span>
+                        <span class="education-tag">Python</span>
+                        <span class="education-tag">Full Stack</span>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cambridge English -->
+            <div class="education-item">
+                <div class="education-date">2024</div>
+                <div class="education-content">
+                    <h3 class="education-title">Inglés Avanzado</h3>
+                    <p class="education-institution">Cambridge , Inglaterra</p>
+                    <p class="education-description">
+                        Programa de inmersión lingüística en Cambridge. Nivel avanzado de inglés 
+                        con certificación internacional. Habilidades en comunicación técnica, 
+                        presentaciones y documentación en inglés para entornos globales.
+                    </p>
+                    <div class="education-tags">
+                        <span class="education-tag">Inglés C1</span>
+                        <span class="education-tag">Comunicación Técnica</span>
+                        <span class="education-tag">Internacional</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ingeniería Electromecánica -->
+            <div class="education-item">
+                <div class="education-date">2020 - Actualidad</div>
+                <div class="education-content">
+                    <h3 class="education-title">Ingeniería Electromecánica</h3>
+                    <p class="education-institution">Unidades Tecnológicas de Santander</p>
+                    <p class="education-description">
+                        Formación en diseño, análisis y mantenimiento de sistemas electromecánicos. 
+                        Conocimientos en automatización, robótica, termodinámica, mecánica de fluidos 
+                        y sistemas de control. Integración de software y hardware para soluciones técnicas.
+                    </p>
+                    <div class="education-tags">
+                        <span class="education-tag">Automatización</span>
+                        <span class="education-tag">Sistemas de Control</span>
+                        <span class="education-tag">Mantenimiento</span>
+                        <span class="education-tag">Sistemas de Refrigeracion</span>
+                        <span class="education-tag">Sistemas Electricos</span>
+                        <span class="education-tag">Diseño Mecánico</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+     <!-- Sección Habilidades -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">HABILIDADES</h2>
+            
+            <!-- Botones de toggle CORREGIDOS -->
+            <div class="skills-toggle">
+                <button class="toggle-btn active" data-tab="software">SOFTWARE</button>
+                <button class="toggle-btn" data-tab="soft">H. BLANDAS</button>
+            </div>
+
+            <!-- Contenido Software CORREGIDO -->
+        <div class="skills-content software-skills active">
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <span class="skill-name">HTML5</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <span class="skill-name">CSS3</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <span class="skill-name">JavaScript</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <span class="skill-name">Java</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <span class="skill-name">Spring Boot</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <span class="skill-name">MySQL</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <span class="skill-name">Python</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <span class="skill-name">SolidWorks</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <span class="skill-name">AutoCAD</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <span class="skill-name">OnShape</span>
+                </div>
+            </div>
+        </div>
+            <!-- Contenido Habilidades Blandas -->
+            <div class="skills-content soft-skills">
+                <div class="soft-skills-content">
+                    <h3 class="soft-skills-title">HABILIDADES BLANDAS</h3>
+                    <div class="soft-skills-grid">
+                        <div class="soft-skill-item">
+                            <h4>Trabajo en Equipo</h4>
+                            <p>Colaboración efectiva en equipos multidisciplinarios, comunicación clara y capacidad para alcanzar objetivos comunes.</p>
+                        </div>
+                        <div class="soft-skill-item">
+                            <h4>Trabajo bajo Presión</h4>
+                            <p>Mantengo el enfoque y la eficiencia en situaciones de alta demanda y plazos ajustados.</p>
+                        </div>
+                        <div class="soft-skill-item">
+                            <h4>Toma de Decisiones</h4>
+                            <p>Análisis crítico de situaciones complejas para tomar decisiones informadas y efectivas.</p>
+                        </div>
+                        <div class="soft-skill-item">
+                            <h4>Resolución de Problemas</h4>
+                            <p>Enfoque metódico para identificar, analizar y resolver desafíos técnicos y operativos.</p>
+                        </div>
+                        <div class="soft-skill-item">
+                            <h4>Adaptabilidad</h4>
+                            <p>Flexibilidad para trabajar en diferentes entornos y aprender nuevas tecnologías rápidamente.</p>
+                        </div>
+                        <div class="soft-skill-item">
+                            <h4>Comunicación Efectiva</h4>
+                            <p>Capacidad para explicar conceptos técnicos a audiencias no técnicas y documentar procesos claramente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto ACTUALIZADA -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">CONTACTO</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>¿Listo para trabajar juntos?</h3>
+                    <p>Contactame através de cualquiera de estas plataformas:</p>
+                    
+                    <div class="contact-links">
+                        <a href="https://wa.me/573163500000" class="contact-link whatsapp" target="_blank">
+                            <span class="contact-icon"><i class="fab fa-whatsapp"></i></span>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nicol%C3%A1s-ardila-rosas-879413242/?trk=opento_sprofile_topcard" class="contact-link linkedin" target="_blank">
+                            <span class="contact-icon"><i class="fab fa-linkedin"></i></span>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/nicolasardila2002" class="contact-link github" target="_blank">
+                            <span class="contact-icon"><i class="fab fa-github"></i></span>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="mailto:nicolasardilarosas@gmail.com" class="contact-link email">
+                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Nicolas Ardila Rosas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
